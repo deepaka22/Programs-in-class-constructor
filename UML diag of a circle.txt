@@ -1,0 +1,34 @@
+class Circle {
+  constructor(radius, color) {
+    this.radius = radius;
+    this.color = color;
+  }
+
+  getradius() {return this.radius;}
+
+  setradius(rad) {return (this.radius = rad);}
+
+  getcolor() {return this.color;}
+
+  setcolor(col) {return (this.color = col);}
+
+  getarea() {return 3.14 * (this.radius * this.radius);}
+
+  getcircumference() {return 2 * 3.14 * this.radius;}
+}
+
+let circle1 = new Circle("1.0", "red");
+// GET radius
+console.log(circle1.getradius());
+//SET radius
+circle1.setradius("3.0");
+console.log(circle1.getradius());
+// or console.log (circle1.setradius('2.0'));
+// GET COLOR
+console.log(circle1.getcolor());
+// SET COLOR
+console.log(circle1.setcolor("black"));
+// GET AREA  (AREA = 3.14 * radius2)
+console.log(circle1.getarea());
+//GET CIRCUMSTANCES (C = 2*3.14*R)
+console.log(circle1.getcircumference());
